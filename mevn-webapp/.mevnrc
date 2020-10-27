@@ -1,8 +1,0 @@
-{
-  "name": "mevn-test2",
-  "template": "Default",
-  "isConfigured": {
-    "client": false,
-    "server": true
-  }
-}
