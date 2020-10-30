@@ -47,7 +47,7 @@ async function main() {
   //   await read(client, 'Infinite Views');
   //   await update(client, 'Infinite Views', {bedrooms: 6, beds:8,});
   //   await deleteListing(client, 'Cozy Cottage');
-  await gpt3();
+  /*await gpt3();
   await gpt3res();
   } catch (e) {
     console.error(e);
@@ -126,6 +126,6 @@ async function gpt3res(){
   });
   
   console.log(gptResponse.data);
-}
+}*/
 module.exports = router;
 //this page is posts.js in the tutorial
