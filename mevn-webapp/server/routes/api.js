@@ -21,7 +21,7 @@ async function main() {
     await listDatabases(client);
     await create(client, [
       {
-          name: "Infinite Views",
+          name: "Hello world",
           summary: "Modern home with infinite views from the infinity pool",
           property_type: "House",
           bedrooms: 5,
