@@ -92,17 +92,13 @@ result = await client.db('sample_airbnb').collection("listingsAndReviews").delet
 console.log(`${result.deleteCount} document(s) was/were deleted.`);
 
 }
-// async function userFilter(client, {
 
-// })
 async function listDatabases(client){
 databasesList = await client.db().admin().listDatabases();
 console.log("Databases: ");
 databasesList.databases.forEach(db => console.log(`- ${db.name}`));
 }
 
-
- 
 async function gpt3(){
    const gptResponse = await openai.complete({
     engine: 'davinci',
