@@ -21,7 +21,7 @@ async function main() {
     await listDatabases(client);
     await create(client, [
       {
-          name: "Hello World",
+          name: "Infinite Views",
           summary: "Modern home with infinite views from the infinity pool",
           property_type: "House",
           bedrooms: 5,
@@ -92,13 +92,17 @@ result = await client.db('sample_airbnb').collection("listingsAndReviews").delet
 console.log(`${result.deleteCount} document(s) was/were deleted.`);
 
 }
+// async function userFilter(client, {
 
+// })
 async function listDatabases(client){
 databasesList = await client.db().admin().listDatabases();
 console.log("Databases: ");
 databasesList.databases.forEach(db => console.log(`- ${db.name}`));
 }
 
+
+ 
 async function gpt3(){
    const gptResponse = await openai.complete({
     engine: 'davinci',
