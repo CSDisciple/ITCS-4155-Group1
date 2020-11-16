@@ -1,6 +1,6 @@
 <!--SOURCES USED IN HELPING MAKE THIS PAGE-->
 <!--Code from Stephen (uniform tool bar to be displayed throughout the webapp)-->
-<!--(Including links within): https://overapi.com/html-->
+<!--(Including the links within): https://overapi.com/html-->
 <!--https://www.w3schools.com/html/html_intro.asp-->
 <!--https://www.w3schools.com/html/html_basic.asp-->
 <!--https://www.w3schools.com/html/html_attributes.asp-->
@@ -15,6 +15,11 @@
 <!--https://www.w3schools.com/js/js_events.asp-->
 <!--https://www.w3schools.com/js/js_htmldom_methods.asp-->
 <!--https://www.w3schools.com/js/js_htmldom_document.asp-->
+<!--https://www.w3schools.com/CSSref/css3_pr_box-sizing.asp-->
+<!--https://www.w3schools.com/CSSref/pr_background-position.asp-->
+<!--https://www.w3schools.com/CSSref/pr_background-image.asp-->
+<!--https://www.w3schools.com/CSSref/pr_background-blend-mode.asp-->
+<!--https://www.w3schools.com/cssref/pr_margin-bottom.asp-->
 
 <!--skilby2-->
 
@@ -115,43 +120,69 @@
       <h3>Need Help? Checkout these most common questions...</h3>
       <hr>
 
+      <style>
+        body {
+          background-image: url("https://lh3.googleusercontent.com/w4By_oTcIeR5YJeLV73f-txVV3A4gFpspO0eeJ5OvQTvSBPW95n-_o0yB-no03rWeIy6I34UgZqAp-rVZ5JuUxk2rWUqT6t9O5pmiGQ0BZcH_9krPJBd2kVotzy7V3JBNpKenYVf-sbOAuGSO3XM9CR0skuOS_WQKIJk8JGaw0EwydAEh3vtva6Ak_bSb7zrzh4tqyknY44Rt2txb4AaL-tfy4NSaEduOxOWEOG5AV60lfjvAauV36acA082cgIfhb4EPWtb_fAQxFzQZNRVKAZZCtPetRNvTlIg5WR5nwUlQ3b4fsxxOi5HEX3JiwvUlJnWecOtgNtS1tm1EDJT_HzQaJCynv6c_GJDJ8WE9b7UnAj4oy5KV3lvegJCMoU7_4ZIhb3WXXWCBIrlB-83HyTSjn8QiiDZJxUtsQlSVw6f-FBbnRbhx96kDuo7AmJMsst-HKSVu2OJgixzlIWXuTbA6HFU7P_OxC2DWq13dqQB9vuVDitMa2MGcTBfeGqZA7E-WmM3YXZo18b060ZrYGbewctVqTqX6sIqWN9M2L2DT5SHkgCDG9Jgqo0Oq6B99fLlnIVIFovSmRj2XIcbnjBOgRmOh3gOau8q8_K_ihqT4j_QKeCgAMJ5UjCE6AGnJH9tZSdMMZJFHTBe7a0gDSO7IHb3e3JFE7BbCGmIV4JMO0PKILkbNiYulSM=w1164-h643-no?authuser=1");
+          background-blend-mode: lighten;
+          background-color: #a7a9ad;
+          background-position: 400px 200px
+        }
+      </style>
       <!--Source used (approved by TA): https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp-->
+
+      <div class="container">
+        <a href="#whatIs" class="btn btn-primary" data-toggle="collapse">What is Interactive Storyteller?</a>
+        <div id="whatIs" style="background: #CED8F6; margin-bottom: 10px" class="collapse">
+          Interactive StoryTeller is a story-writting website. But, these stories are different from your 
+          traditional, linear stories. On Interactive Storyteller, the reader chooses the story. Each book written 
+          on Interactve Storyteller has any number of different choices within a book that may divert the 
+          story being read in another direction.
+        </div>
+      </div>
+
       <div class="container">
         <a href="#create" class="btn btn-primary" style="background:#424242" data-toggle="collapse">How do I create/write a book?</a>
-        <div id="create" class="collapse">
-          To create/write a new book...
+        <div id="create" style="background: #F2F2F2; margin-bottom: 10px" class="collapse">
+          To create/write a new book a user must first have an account. If the user does not have an 
+          account, then an account must be created. <br> A user with an account must then be signed in 
+          so any book created can be associated with their account. <br> To create a book, use this 
+          link that further explains the process...
         </div>
       </div>
 
       <div class="container">
         <a href="#howUse" class="btn btn-primary" data-toggle="collapse">How do I use this website?</a>
-        <div id="howUse" class="collapse">
+        <div id="howUse" style="background: #CED8F6; margin-bottom: 10px" class="collapse">
           Here is a link on how to use the website...
         </div>
       </div>
 
       <div class="container">
         <a href="#money" class="btn btn-primary" style="background:#424242" data-toggle="collapse">How much money do I make on my book?</a>
-        <div id="money" class="collapse">
+        <div id="money" style="background: #F2F2F2; margin-bottom: 10px" class="collapse">
           Interavtvive Storyteller is a non-profit application for the enetertainment of the readers/users.
+          Once content is published to our website, it becomes property of Interactive Storyteller, though 
+          to a specific user. The user agrees to this when using Interactive Storyteller.
         </div>
       </div>
 
       <div class="container">
         <a href="#who" class="btn btn-primary" data-toggle="collapse">Who is this website for?</a>
-        <div id="who" class="collapse">
-          Interactive Storyteller is for those who desire more freedom of choice 
+        <div id="who" style="background: #CED8F6; margin-bottom: 10px" class="collapse">
+        Interactive Storyteller is for those who desire more freedom of choice 
         in their literature. Users of this site seek a less linear approach to 
         reading and writting stories. This breaks away from traditional stories 
         that follow through to the written end. Interactive Storyteller changes 
-        this in that there can be many ends.
+        this in that there can be many ends. This may be strongly popular in groups 
+        who enjoy fanfiction, speculation, and adventure.
         </div>
       </div>
 
       <div class="container">
-        <a href="#Test" class="btn btn-primary" style="background:#424242" data-toggle="collapse">How do I use this website?</a>
-        <div id="Test" class="collapse">
-          Here is a link on how to use the website...
+        <a href="#save" class="btn btn-primary" style="background:#424242" data-toggle="collapse">Can I save my book to my computer?</a>
+        <div id="save" style="background: #F2F2F2; margin-bottom: 10px" class="collapse">
+          Interactive Storyteller owns all books published to the website. The author (username) is only 
+          needed for editorial purposes later, should the author need to edit something within their book. 
         </div>
       </div>
 </body>
