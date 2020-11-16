@@ -11,6 +11,10 @@
 <!--https://www.w3schools.com/html/html_scripts.asp-->
 <!--https://www.w3schools.com/html/html_id.asp-->
 <!--https://www.computerhope.com/issues/ch001034.htm-->
+<!--https://www.w3schools.com/js/js_intro.asp-->
+<!--https://www.w3schools.com/js/js_events.asp-->
+<!--https://www.w3schools.com/js/js_htmldom_methods.asp-->
+<!--https://www.w3schools.com/js/js_htmldom_document.asp-->
 
 <!--skilby2-->
 
@@ -111,53 +115,83 @@
       <h3>Need Help? Checkout these most common questions...</h3>
       <hr>
 
-    <button type = "button" class = "collapsible">How do I create/write a book?</button>
+      <!--Source used (approved by TA): https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp-->
+      <div class="container">
+        <a href="#create" class="btn btn-primary" style="background:#424242" data-toggle="collapse">How do I create/write a book?</a>
+        <div id="create" class="collapse">
+          To create/write a new book...
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#howUse" class="btn btn-primary" data-toggle="collapse">How do I use this website?</a>
+        <div id="howUse" class="collapse">
+          Here is a link on how to use the website...
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#money" class="btn btn-primary" style="background:#424242" data-toggle="collapse">How much money do I make on my book?</a>
+        <div id="money" class="collapse">
+          Interavtvive Storyteller is a non-profit application for the enetertainment of the readers/users.
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#who" class="btn btn-primary" data-toggle="collapse">Who is this website for?</a>
+        <div id="who" class="collapse">
+          Interactive Storyteller is for those who desire more freedom of choice 
+        in their literature. Users of this site seek a less linear approach to 
+        reading and writting stories. This breaks away from traditional stories 
+        that follow through to the written end. Interactive Storyteller changes 
+        this in that there can be many ends.
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#Test" class="btn btn-primary" style="background:#424242" data-toggle="collapse">How do I use this website?</a>
+        <div id="Test" class="collapse">
+          Here is a link on how to use the website...
+        </div>
+      </div>
+</body>
+
+</html>
+
+<!--Code not used-->
+<!--Code suggestion by Oleksandr
+   .show {display: block;} -->
+<!-- Possible drop-down feature coming soon, maybe -->
+<!-- <button type = "button" onclick = "dropdown()" class = "collapsible">How do I create/write a book?</button>
     <div class = "content">
-      <p>To create/wite a new book...</p>
+      <p>To create/write a new book...</p>
     </div>
     
-    <button type = "button" class = "collapsible">How do I use this website?</button>
+    <button type = "button" onclick = "dropdown()" class = "collapsible">How do I use this website?</button>
     <div class = "content">
       <p>Here is a link on how to use the website...</p>
     </div>
 
-    <button type = "button" class = "collapsible">How much money do I make on my book?</button>
+    <button type = "button" onclick = "dropdown()" class = "collapsible">How much money do I make on my book?</button>
     <div class = "content">
       <p>Interavtvive Storyteller is a non-profit application for the enetertainment of 
         the readers/users.
       </p>
     </div>
 
-    <button type = "button" class = "collapsible">Who is this website for?</button>
+    <button type = "button" onclick = "dropdown()" class = "collapsible">Who is this website for?</button>
     <div class = "content">
-      <p>Interactive Storyteller is for those who desire more freedom of choice 
-        in their literature. Users of this site seek a less linear approach to 
-        reading and writting stories. This breaks away from traditional stories 
-        that follow through to the written end. Interactive Storyteller changes 
-        this in that there can be many ends.
+      <p>Interactive Storyteller is...
       </p>
-    </div>
-
-    <button type = "button" class = "collapsible">Try this?</button>
-    <div class = "content">
-      <p>TEXT</p>
-    </div>
-
-    <button type = "button" class = "collapsible">Try this?</button>
-    <div class = "content">
-      <p>TEXT</p>
-    </div>
-
-    <!-- Possible drop-down feature coming soon, maybe -->
-    <stript>
-      function dropdown() {
-        document.getElementByID()
-      }
-      
-    </stript>
-
-</body>
-<!---->
-
-
-</html>
+    </div> -->
+<!-- <script>
+  function dropdown() {
+    document.getElementByID("test").style.display = "none";
+    //Oleksandr suggestion code
+  //document.getElementById("content").classList.toggle("show");
+}
+</script> -->
+<!-- function dropdown() {
+  //  document.getElementByID("test").style.display = "none";
+  document.getElementById("content").classList.toggle("show");
+} -->
