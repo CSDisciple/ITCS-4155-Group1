@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/mevn.jpg" width="350" />
-    <HelloWorld msg="Default Boilerplate Template" />
+  
+    <HelloWorld msg="This is where the stories start" />
   </div>
 </template>
 
@@ -12,7 +12,8 @@ import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "home",
   components: {
-    HelloWorld
+    HelloWorld,
+  
   }
 };
 </script>
