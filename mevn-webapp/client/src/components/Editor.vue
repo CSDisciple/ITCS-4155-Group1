@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>This is where the stories start</h1>
+    <h1>This is where your story begins.</h1>
     <medium-editor id='medium-editor' :content="content" :options="options" />
+     <a class="btn btn-primary stretched-link">Save</a>
   </div>
   
 </template>
