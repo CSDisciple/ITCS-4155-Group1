@@ -22,7 +22,7 @@ aria-controls = "navbarSupportedContent-555" aria-expanded = "false" aria-label 
         <a class="nav-link" href="#">FAQ</a>
       </li>
 	    <li class="nav-item">
-        <a class="nav-link" href="#">Discussion Board</a>
+        <a class="nav-link" href="#">Community</a>
       </li>
 	    <li class="nav-item">
         <a class="nav-link" href="#">Create a Story</a>

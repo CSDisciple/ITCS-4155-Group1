@@ -2,6 +2,8 @@
 
 <div class = "Community">
 
+    <Nav/>
+
     <!--Bootstrap "jumbotron" -->
     <div class = "jumbotron jumbotron-fluid bg-dark text-white">
         <h1 class = "text-center">See What the Community Is Up To!</h1>
