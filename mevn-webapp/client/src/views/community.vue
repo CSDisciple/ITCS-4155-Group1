@@ -1,6 +1,6 @@
 <template>
 
-<div>
+<div class = "Community">
 
     <!--Bootstrap "jumbotron" -->
     <div class = "jumbotron jumbotron-fluid bg-dark text-white">

@@ -23,6 +23,11 @@ export default new Router({
       name: "create",
       component: () => import("./views/Create.vue")
     },
+    {
+      path: "/community",
+      name: "community",
+      component: () => import("./views/community.vue")
+    },
 
   ]
 });
