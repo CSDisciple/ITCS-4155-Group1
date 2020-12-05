@@ -1,4 +1,4 @@
-import OpenAI from 'openai-api';
+/*import OpenAI from 'openai-api';
 const OPEN_AI_API_KEY = pk-Z8a8fLNWjo4BvRQQWb2gUjApu7LrSOfaXq1KoPMU
 const openai = new OpenAI(OPEN_AI_API_KEY);
  

@@ -1,6 +1,12 @@
 <template>
 
+<<<<<<< HEAD
 <div>
+=======
+<div class = "Community">
+
+    <Nav/>
+>>>>>>> master
 
     <!--Bootstrap "jumbotron" -->
     <div class = "jumbotron jumbotron-fluid bg-dark text-white">

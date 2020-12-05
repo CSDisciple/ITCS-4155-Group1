@@ -17,11 +17,45 @@ router.get('/', async (req, res) => {
 async function main() {
 
   try {
+<<<<<<< HEAD
+  //   await client.connect();
+  //   await listDatabases(client);
+  //   await create(client, [
+  //     {
+  //         name: "Infinite Views",
+  //         summary: "Modern home with infinite views from the infinity pool",
+  //         property_type: "House",
+  //         bedrooms: 5,
+  //         bathrooms: 4.5,
+  //         beds: 5
+  //     },
+  //     {
+  //         name: "Private room in London",
+  //         property_type: "Apartment",
+  //         bedrooms: 1,
+  //         bathroom: 1
+  //     },
+  //     {
+  //         name: "Beautiful Beach House",
+  //         summary: "Enjoy relaxed beach living in this house with a private beach",
+  //         bedrooms: 4,
+  //         bathrooms: 2.5,
+  //         beds: 7,
+  //         last_review: new Date()
+  //     }
+
+  // ]);
+  //   await read(client, 'Infinite Views');
+  //   await update(client, 'Infinite Views', {bedrooms: 6, beds:8,});
+  //   await deleteListing(client, 'Cozy Cottage');
+  /*await gpt3();
+  await gpt3res();
+=======
     await client.connect();
     await listDatabases(client);
     await create(client, [
       {
-          name: "Infinite Views",
+          name: "Hello world",
           summary: "Modern home with infinite views from the infinity pool",
           property_type: "House",
           bedrooms: 5,
@@ -49,6 +83,7 @@ async function main() {
     await deleteListing(client, 'Cozy Cottage');
   // await gpt3();
   // await gpt3res();
+>>>>>>> c23593fe6e94787bd62619de1ddeb7eae7cc355e
   } catch (e) {
     console.error(e);
   }
@@ -126,6 +161,6 @@ async function gpt3res(){
   });
   
   console.log(gptResponse.data);
-}
+}*/
 module.exports = router;
 //this page is posts.js in the tutorial
