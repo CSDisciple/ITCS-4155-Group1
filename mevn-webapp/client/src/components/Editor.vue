@@ -10,13 +10,13 @@
 <script>
 
 export default {
-  name: "HelloWorld",
+  name: "Editor",
   props: {
     msg: String,
   },
   data() {
     return {
-      content: "",
+      content: "content",
       options: {},
     };
   },
@@ -32,7 +32,7 @@ export default {
 
 
 
-#medium-editor{
+template{
 background-color: #f5f5f5;
 width: 50em;
 height: 15em;

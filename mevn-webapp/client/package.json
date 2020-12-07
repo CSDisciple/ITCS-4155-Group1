@@ -2,13 +2,16 @@
   "name": "mevn-starter",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3"
