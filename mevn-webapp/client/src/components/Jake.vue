@@ -6,7 +6,7 @@
             <h1 class = "text-center">See What the Community Is Up To!</h1>
         </div>
         <!--End of "jumbotron" -->
-  <!--Story search bar-->
+        <!--Story search bar-->
         <div class = "container" style = "align-items: center;">
             <input id = "commSearch" type="text" placeholder="Search Stories...">
             <input type="submit" value="Search">
