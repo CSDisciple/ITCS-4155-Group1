@@ -23,6 +23,11 @@ export default new Router({
       name: "create",
       component: () => import("./views/Create.vue")
     },
+    {
+      path: "/faq",
+      name: "faq",
+      component: () => import("./components/faq.vue")
+    }
 
   ]
 });
