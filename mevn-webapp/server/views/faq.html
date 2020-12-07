@@ -1,0 +1,228 @@
+<!--SOURCES USED IN HELPING MAKE THIS PAGE-->
+<!--Code from Stephen (uniform tool bar to be displayed throughout the webapp)-->
+<!--(Including the links within): https://overapi.com/html-->
+<!--https://www.w3schools.com/html/html_intro.asp-->
+<!--https://www.w3schools.com/html/html_basic.asp-->
+<!--https://www.w3schools.com/html/html_attributes.asp-->
+<!--https://www.w3schools.com/html/html_styles.asp-->
+<!--https://www.w3schools.com/html/html_formatting.asp-->
+<!--https://www.w3schools.com/html/html_css.asp-->
+<!--https://www.w3schools.com/html/html_classes.asp-->
+<!--https://www.w3schools.com/html/html_scripts.asp-->
+<!--https://www.w3schools.com/html/html_id.asp-->
+<!--https://www.computerhope.com/issues/ch001034.htm-->
+<!--https://www.w3schools.com/js/js_intro.asp-->
+<!--https://www.w3schools.com/js/js_events.asp-->
+<!--https://www.w3schools.com/js/js_htmldom_methods.asp-->
+<!--https://www.w3schools.com/js/js_htmldom_document.asp-->
+<!--https://www.w3schools.com/CSSref/css3_pr_box-sizing.asp-->
+<!--https://www.w3schools.com/CSSref/pr_background-position.asp-->
+<!--https://www.w3schools.com/CSSref/pr_background-image.asp-->
+<!--https://www.w3schools.com/CSSref/pr_background-blend-mode.asp-->
+<!--https://www.w3schools.com/cssref/pr_margin-bottom.asp-->
+
+<!--skilby2-->
+
+<html lang = "en">
+<!DOCTYPE html>
+
+<!--Code from Stephen for unity between page visuals-->
+<head>
+    <title>Interactive Storyteller</title>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+	<!-- Source for Bootstrap -->
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!--skilby2 inserted code (style)-->
+  <style type = "text/css">
+    h2 {
+        font-size: 400%;
+        color: #FAFAFA;
+        padding: 20px;
+        background: #0B0B3B;
+        text-align: center
+    }
+    h3 {
+      color: #FAFAFA;
+      padding: 5px;
+      background: #0B0B3B;
+      text-align: center;
+    }
+    .collapsible {
+      color: #FAFAFA;
+      background: #424242;
+      padding: 5px;
+      margin-left: 20px;
+    }
+    .content {
+      color: #424242;
+      background: #A4A4A4;
+      margin-left: 20px;
+    }
+  </style>
+<!--skilby2 inserted code end (style)-->
+
+</head>
+
+<body>
+<!--Navigation bar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class = "navbar-brand" href ="#">Interactive Storyteller</a>
+    <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target ="#navbarSupportedContent-555"
+    aria-controls = "navbarSupportedContent-555" aria-expanded = "false" aria-label = "Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">FAQ</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Discussion Board</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Create a Story</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item avatar dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="https://i.imgur.com/WD15vcD.png" class="rounded-circle z-depth-0"
+                alt="avatar image">
+            </a>
+            <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+              aria-labelledby="navbarDropdownMenuLink-55">
+              <a class="dropdown-item" href="#">Your profile</a>
+              <a class="dropdown-item" href="#">Private messages</a>
+              <a class="dropdown-item" href="#">Saved stories</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!--End of Navigation Bar -->
+    <!--End of Stephen's Code-->
+
+      <h2><b>FAQ</b></h2>
+      <h3>Need Help? Checkout these most common questions...</h3>
+      <hr>
+
+      <style>
+        body {
+          background-image: url("https://i.imgur.com/zggt1Bl.jpg");
+          background-blend-mode: lighten;
+          background-color: #a7a9ad;
+          background-position: 400px 200px
+        }
+      </style>
+      <!--Source used (approved by TA): https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp-->
+
+      <div class="container">
+        <a href="#whatIs" class="btn btn-primary" data-toggle="collapse">What is Interactive Storyteller?</a>
+        <div id="whatIs" style="background: #CED8F6; margin-bottom: 10px" class="collapse">
+          Interactive StoryTeller is a story-writting website. But, these stories are different from your 
+          traditional, linear stories. On Interactive Storyteller, the reader chooses the story. Each book written 
+          on Interactve Storyteller has any number of different choices within a book that may divert the 
+          story being read in another direction.
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#create" class="btn btn-primary" style="background:#424242" data-toggle="collapse">How do I create/write a book?</a>
+        <div id="create" style="background: #F2F2F2; margin-bottom: 10px" class="collapse">
+          To create/write a new book a user must first have an account. If the user does not have an 
+          account, then an account must be created. <br> A user with an account must then be signed in 
+          so any book created can be associated with their account. <br> To create a book, use this 
+          link that further explains the process...
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#howUse" class="btn btn-primary" data-toggle="collapse">How do I use this website?</a>
+        <div id="howUse" style="background: #CED8F6; margin-bottom: 10px" class="collapse">
+          Here is a link on how to use the website...
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#money" class="btn btn-primary" style="background:#424242" data-toggle="collapse">How much money do I make on my book?</a>
+        <div id="money" style="background: #F2F2F2; margin-bottom: 10px" class="collapse">
+          Interavtvive Storyteller is a non-profit application for the enetertainment of the readers/users.
+          Once content is published to our website, it becomes property of Interactive Storyteller, though 
+          to a specific user. The user agrees to this when using Interactive Storyteller.
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#who" class="btn btn-primary" data-toggle="collapse">Who is this website for?</a>
+        <div id="who" style="background: #CED8F6; margin-bottom: 10px" class="collapse">
+        Interactive Storyteller is for those who desire more freedom of choice 
+        in their literature. Users of this site seek a less linear approach to 
+        reading and writting stories. This breaks away from traditional stories 
+        that follow through to the written end. Interactive Storyteller changes 
+        this in that there can be many ends. This may be strongly popular in groups 
+        who enjoy fanfiction, speculation, and adventure.
+        </div>
+      </div>
+
+      <div class="container">
+        <a href="#save" class="btn btn-primary" style="background:#424242" data-toggle="collapse">Can I save my book to my computer?</a>
+        <div id="save" style="background: #F2F2F2; margin-bottom: 10px" class="collapse">
+          Interactive Storyteller owns all books published to the website. The author (username) is only 
+          needed for editorial purposes later, should the author need to edit something within their book. 
+        </div>
+      </div>
+</body>
+
+</html>
+
+<!--Code not used-->
+<!--Code suggestion by Oleksandr
+   .show {display: block;} -->
+<!-- Possible drop-down feature coming soon, maybe -->
+<!-- <button type = "button" onclick = "dropdown()" class = "collapsible">How do I create/write a book?</button>
+    <div class = "content">
+      <p>To create/write a new book...</p>
+    </div>
+    
+    <button type = "button" onclick = "dropdown()" class = "collapsible">How do I use this website?</button>
+    <div class = "content">
+      <p>Here is a link on how to use the website...</p>
+    </div>
+
+    <button type = "button" onclick = "dropdown()" class = "collapsible">How much money do I make on my book?</button>
+    <div class = "content">
+      <p>Interavtvive Storyteller is a non-profit application for the enetertainment of 
+        the readers/users.
+      </p>
+    </div>
+
+    <button type = "button" onclick = "dropdown()" class = "collapsible">Who is this website for?</button>
+    <div class = "content">
+      <p>Interactive Storyteller is...
+      </p>
+    </div> -->
+<!-- <script>
+  function dropdown() {
+    document.getElementByID("test").style.display = "none";
+    //Oleksandr suggestion code
+  //document.getElementById("content").classList.toggle("show");
+}
+</script> -->
+<!-- function dropdown() {
+  //  document.getElementByID("test").style.display = "none";
+  document.getElementById("content").classList.toggle("show");
+} -->

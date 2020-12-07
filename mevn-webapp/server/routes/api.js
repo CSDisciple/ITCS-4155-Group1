@@ -7,7 +7,13 @@ const client = new MongoClient(uri, { useNewUrlParser: true , useUnifiedTopology
 const OpenAI =require('openai-api');
 const OPEN_AI_API_KEY = "sk-UAI47DsbnY4MFn1awPMAKXrax0lN52PBxofs1w8x";
 const openai = new OpenAI(OPEN_AI_API_KEY);
-
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/posts');
+var db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error"));
+db.once("open", function(callback){
+  console.log("Connection Succeeded");
+});
 router.get('/', async (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'views', 'index.html')); //get the html 
 });
@@ -21,7 +27,7 @@ async function main() {
     await listDatabases(client);
     await create(client, [
       {
-          name: "Infinite Views",
+          name: "Hello world",
           summary: "Modern home with infinite views from the infinity pool",
           property_type: "House",
           bedrooms: 5,
@@ -92,13 +98,17 @@ result = await client.db('sample_airbnb').collection("listingsAndReviews").delet
 console.log(`${result.deleteCount} document(s) was/were deleted.`);
 
 }
+// async function userFilter(client, {
 
+// })
 async function listDatabases(client){
 databasesList = await client.db().admin().listDatabases();
 console.log("Databases: ");
 databasesList.databases.forEach(db => console.log(`- ${db.name}`));
 }
 
+
+ 
 async function gpt3(){
    const gptResponse = await openai.complete({
     engine: 'davinci',

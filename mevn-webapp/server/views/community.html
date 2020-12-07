@@ -1,4 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
+<head>
+	<title>Interactive Storyteller</title>
+	<meta charset = "utf-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+	<!-- Source for Bootstrap -->
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--Navigation bar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<a class = "navbar-brand" href ="#">Interactive Storyteller</a>
+<button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target ="#navbarSupportedContent-555"
+aria-controls = "navbarSupportedContent-555" aria-expanded = "false" aria-label = "Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="#">FAQ</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="#">Discussion Board</a>
+      </li>
+	    <li class="nav-item">
+        <a class="nav-link" href="#">Create a Story</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item avatar dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <img src="https://i.imgur.com/WD15vcD.png" class="rounded-circle z-depth-0"
+            alt="avatar image">
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg-right dropdown-secondary"
+          aria-labelledby="navbarDropdownMenuLink-55">
+          <a class="dropdown-item" href="#">Your profile</a>
+          <a class="dropdown-item" href="#">Private messages</a>
+          <a class="dropdown-item" href="#">Saved stories</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--End of Navigation Bar -->
+
+<!--Bootstrap "jumbotron" -->
+<div class = "jumbotron jumbotron-fluid bg-dark text-white">
+	<h1 class = "text-center">See What the Community Is Up To!</h1>
+</div>
+<!--End of "jumbotron" -->
+
+<!--Story search bar-->
+<div class = "container" style = "align-items: center;">
+    <input id = "commSearch" type="text" placeholder="Search Stories...">
+    <input type="submit" value="Search">
+</div>
+
+<br>
+
+<!--Criteria selection form for searching-->
+<div class = "container">
+<form id = "commDropForm" class="form-inline" id = "#nav" style = "margin: auto;">
+        <div class="dropdown">
+        <button class = "btn btn-primary dropdown-toggle" type = "button" data-toggle = "dropdown">Genre<span class = "caret"></span></button>
+        <ul class = "dropdown-menu">
+            <li class = "divider"><a href = "#">Fantasy</a></li>
+            <li class = "divider"><a href = "#">Horror</a></li>
+            <li class = "divider"><a href = "#">Sci-Fi</a></li>
+            <li class = "divider"><a href = "#">Comedy</a></li>
+            <li class = "divider"><a href = "#">Sports</a></li>
+            <li class = "divider"><a href = "#">Satire</a></li>
+            <li class = "divider"><a href = "#">Historical</a></li>
+        </ul>
+        </div>
     
+        &nbsp;
+    
+        <div class="dropdown">
+            <button class = "btn btn-primary dropdown-toggle" type = "button" data-toggle = "dropdown">Tags<span class = "caret"></span></button>
+            <ul class = "dropdown-menu">
+                <li class = "divider"><a href = "#">Favorites</a></li>
+                <li class = "divider"><a href = "#">Most Read</a></li>
+                <li class = "divider"><a href = "#">Highest Rated</a></li>
+         </ul>
+        </div>
+      
+        &nbsp;
+
+      <div class="dropdown">
+        <button class = "btn btn-primary dropdown-toggle" type = "button" data-toggle = "dropdown">Number of Choices<span class = "caret"></span></button>
+        <ul class = "dropdown-menu">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5+</li>
+        </ul>
+      </div>
+      
+      &nbsp;
+
+      <input type="submit" value="submit">
+  </form>
+</div>
+
+<br>
+
+</div>
+
+<!--Section for Stories to be selected from-->
+<div class="container">
+  <div class="card-deck">
+      <div class="card mb-4">
+          <img class="card-img-top img-fluid" src = "https://imgur.com/glVE9Vz" alt="First Story Image">
+          <div class="card-body">
+              <h4 class="card-title">Featured Story 1</h4>
+              <p class="card-text">The most recommended story for you!</p>
+          </div>
+      </div>
+      <div class="card mb-4">
+          <img class="card-img-top img-fluid" src="//placehold.it/500x280" alt="Second Story Image">
+          <div class="card-body">
+              <h4 class="card-title">Featured Story 2</h4>
+              <p class="card-text">See what the community is working on!</p>
+          </div>
+      </div>
+      <div class="card mb-4">
+          <img class="card-img-top img-fluid" src="" alt="Third Story Image">
+          <div class="card-body">
+              <h4 class="card-title">Featured Story 3</h4>
+              <p class="card-text">See what the community is working on!</p>
+          </div>
+      </div>
+      <div class="card mb-4">
+          <img class="card-img-top img-fluid" src="" alt="Fourth Story Image">
+          <div class="card-body">
+              <h4 class="card-title">Featured Story 4</h4>
+              <p class="card-text">See what the community is working on!</p>
+          </div>
+      </div>
+</div>
+
+</div>
+<!--Forum using PunBB-->
+<div>
+    <p><iframe border="0" height="600" src="https://interactivestory.forumotion.com/" width="100%"></iframe></p>
+</div>
+
+</body>
+
+
 </html>
