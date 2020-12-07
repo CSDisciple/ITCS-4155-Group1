@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-	  <Nav/>
+	  
   <!--Bootstrap "jumbotron" -->
 <div class = "jumbotron jumbotron-fluid bg-dark text-white">
 	<h1 class = "text-center">Try our GPT3 Based Story Creation Tool</h1>
@@ -36,7 +36,7 @@
           <div class="card-body">
             <h4 class="card-title">To Build a Fire</h4>
             <p class="card-text">Day had broken cold and grey, exceedingly cold and grey, when the man turned aside from the main Yukon trail and climbed the high...</p>
-            <a href="story2.html" class="btn btn-primary stretched-link">Continue reading</a>
+            <a href="story6.html" class="btn btn-primary stretched-link">Continue reading</a>
           </div>
         </div>
       </div>
@@ -103,12 +103,12 @@
 
 <script>
 // @ is an alias to /src
-import Nav from "@/components/Nav.vue";
+
 
 export default {
   name: "home",
   components: {
-    Nav,
+    
   
   }
 };
@@ -116,5 +116,9 @@ export default {
 </script>
 
 <style scoped>
-
+.card-deck{
+  margin: 0 auto;
+  flex-flow: column;
+  align-items: center;
+}
 </style>
