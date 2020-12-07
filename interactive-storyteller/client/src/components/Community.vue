@@ -1,5 +1,12 @@
 <template>
   <div class="posts">
+
+    <!--Bootstrap "jumbotron" -->
+    <div class = "jumbotron jumbotron-fluid bg-dark text-white">
+      <h1 class = "text-center">Try our GPT3 Based Story Creation Tool</h1>
+      <p class = "text-center">End writer's block for good!</p>
+    </div>
+
     <div v-if="posts.length > 0" class="table-wrap">
       <table>
         <tr>
