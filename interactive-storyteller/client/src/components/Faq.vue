@@ -67,7 +67,6 @@ export default {
   name: "faq",
   components: {
     
-  
   }
 };
 </script>
