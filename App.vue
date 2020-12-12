@@ -21,7 +21,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color:aliceblue;
 }
 #nav {
   list-style-type: none;
