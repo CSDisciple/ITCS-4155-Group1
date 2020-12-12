@@ -41,10 +41,21 @@ export default {
 </script>
 
 <style scoped>
-        body {
-          background-image: url("https://i.imgur.com/zggt1Bl.jpg");
-          background-blend-mode: lighten;
-          background-color: #a7a9ad;
-          background-position: 400px 200px;
-        }
+    h2 {
+      font-size: 400%;
+      color: #FAFAFA;
+      padding: 20px;
+      background: #3f3f42;
+      text-align: center
+    }
+    body {
+      background-image: url("https://i.imgur.com/zggt1Bl.jpg");
+      background-blend-mode: lighten;
+      background-color: #a7a9ad;
+      background-position: 400px 200px;
+    }
+    p {
+      font-size: 130%;
+      font-weight: bold;
+    }
 </style>
