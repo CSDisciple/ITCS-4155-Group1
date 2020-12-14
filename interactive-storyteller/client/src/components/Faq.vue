@@ -1,5 +1,6 @@
 <template>
     <div>
+      <body>
     <h2><b>FAQ</b></h2>
       <h3>Need Help? Checkout these most common questions...</h3>
       <hr>
@@ -59,6 +60,7 @@
           needed for editorial purposes later, should the author need to edit something within their book. 
         </div>
       </div>
+      </body>
     </div>
 </template>
 
